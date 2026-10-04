@@ -4,28 +4,161 @@ INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detect
 # SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
 # IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
 # SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
-# Start of session at: Wed Sep 30 16:25:36 2026
-# Process ID         : 19694
-# Current directory  : /home/jacobbem/School Stuff/Fall 2026/CSE_490/Project_1/cse490_project1
+# Start of session at: Sun Oct  4 14:30:48 2026
+# Process ID         : 32703
+# Current directory  : /home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1
 # Command line       : vivado
-# Log file           : /home/jacobbem/School Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/vivado.log
-# Journal file       : /home/jacobbem/School Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/vivado.jou
+# Log file           : /home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/vivado.log
+# Journal file       : /home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/vivado.jou
 # Running On         : COMPUTERBOOK
 # Platform           : Fedora
 # Operating System   : Fedora Linux 44 (KDE Plasma Desktop Edition)
 # Processor Detail   : AMD Ryzen 7 8840HS w/ Radeon 780M Graphics
-# CPU Frequency      : 1136.386 MHz
+# CPU Frequency      : 1832.784 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 14395 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 22985 MB
-# Available Virtual  : 17458 MB
+# Available Virtual  : 17672 MB
 #-----------------------------------------------------------
 start_gui
-create_project 16_bit_ISA {/home/jacobbem/School Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA} -part xc7a35tcpg236-1
+open_project {/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.xpr}
+INFO: [Project 1-313] Project file moved from '/home/jacobbem/School Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2026.1/data/ip'.
+file mkdir /home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new
+file mkdir /home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new
+file mkdir /home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new
+file mkdir /home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new
+file mkdir /home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new
+file mkdir /home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new
+file mkdir {/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new}
+close [ open {/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v} w ]
+add_files {{/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v}}
+update_compile_order -fileset sources_1
+close [ open {/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_instr.mem} w ]
+add_files {{/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_instr.mem}}
+remove_files  {{/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_instr.mem}}
+close [ open {/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v} w ]
+add_files {{/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v}}
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+close [ open {/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v} w ]
+add_files {{/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v}}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+close [ open {/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v} w ]
+add_files {{/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v}}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/jacobbem/School_Stuff/Fall 2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v:]
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 30 16:33:50 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 17:21:38 2026...
