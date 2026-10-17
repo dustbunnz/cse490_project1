@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+t=20000 addr=0000 instr=0010
+t=30000 addr=0002 instr=0311
+t=40000 addr=0004 instr=0182
+t=50000 addr=0006 instr=1482
+t=60000 addr=0008 instr=4643
+t=70000 addr=000a instr=xxxx
+t=80000 addr=000c instr=xxxx
+t=90000 addr=000e instr=xxxx
+t=100000 addr=0010 instr=xxxx
+t=110000 addr=0012 instr=xxxx
+t=120000 addr=0014 instr=xxxx
+t=130000 addr=0016 instr=xxxx
+t=140000 addr=0018 instr=xxxx
+t=150000 addr=001a instr=xxxx
+t=160000 addr=001c instr=xxxx
+t=170000 addr=001e instr=xxxx
+$finish called at time : 180 ns : File "/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sim_1/new/instr_mem_tstbench.v" Line 45
+INFO: xsimkernel Simulation Memory Usage: 577192 KB (Peak: 642728 KB), Simulation CPU Usage: 700 ms

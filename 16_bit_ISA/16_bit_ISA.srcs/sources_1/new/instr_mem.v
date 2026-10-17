@@ -29,7 +29,7 @@ module instr_mem(
 reg[15:0] mem [0:254];
 
 initial begin 
-    $readmemh("../../../../instr_mem.txt", mem); // will create txt file later
+    $readmemh("instr_mem.txt", mem);
 end
 
 assign instr = mem[addr[8:1]]; // assigns the output to the instruction stored at the memory address. Only memory addresses from 2 to 254 will be accessed

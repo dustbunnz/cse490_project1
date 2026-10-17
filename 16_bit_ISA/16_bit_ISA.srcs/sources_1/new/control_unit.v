@@ -36,8 +36,15 @@ module control_unit(
     );
  
  always @(*) begin
- 
-        // TODO: Add reset for each signal
+        Branch = 0;
+        Zero = 0;
+        Jump = 0;
+        MemRead = 0;
+        MemToReg = 0;
+        ALUOP = 2'b00;
+        MemWrite = 0;
+        ALUSrc = 0;
+        RegWrite = 0;
        case(opcode) 
        4'b0000 : begin 
             RegWrite = 1;

@@ -25,6 +25,19 @@ module data_mem(
     input [15:0] write_data,
     input mem_write,
     input mem_read,
-    output [15:0] read_data
+    output reg [15:0] read_data
     );
+
+
+   reg [15:0] mem [0:255]; // Memory array
+
+
+always @(*) begin 
+    if (mem_write == 1) begin
+        mem[addr] = write_data; // sw
+    end else if (mem_read == 1) begin 
+        read_data = mem[addr]; // lw
+    end
+end                 
+
 endmodule
