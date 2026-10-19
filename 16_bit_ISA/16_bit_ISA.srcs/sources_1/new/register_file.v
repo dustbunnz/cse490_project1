@@ -21,6 +21,7 @@
 
 
 module register_file(
+    //these may eventually need to include some wires
     input clk,
     input RegWrite,
     input[3:0] read_reg1,
@@ -31,15 +32,19 @@ module register_file(
     output[15:0] read_data2
     );
 
-    //add array for registers
-    //move data from readreg1 to output
-    //might split up
-    //reg [15:0] regs [0:15]
+    reg [15:0] regs [0:15];
 
-    always @(posedge clk) begin
-        if (RegWrite) begin
-	     //redo this
-	     //value for data needs to be placed in reg for a write
-	//if regwrite flag is not on
+    //read_data1 <= regs[read_reg1];
+    //read_data2 <= regs[read_reg2];
+    //fixed after referencing pointer slides
+    assign read_data1 = regs[read_reg1];
+    assign read_data2 = regs[read_reg2];
+
+    always @(posedge clk)
+    begin
+        case(RegWrite)
+            1'b1: regs[write_reg] <= write_data;
+            default: ; //nothing happens here
+        endcase
     end
 endmodule
