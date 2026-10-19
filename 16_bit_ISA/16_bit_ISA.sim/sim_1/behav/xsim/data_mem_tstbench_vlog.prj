@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  --include "../../../../../../../../../../../../opt/Xilinx/2026.1/data/rsb/busdef" \
-"../../../../16_bit_ISA.srcs/sources_1/new/instr_mem.v" \
-"../../../../16_bit_ISA.srcs/sim_1/new/instr_mem_tstbench.v" \
+"../../../../16_bit_ISA.srcs/sources_1/new/data_mem.v" \
+"../../../../16_bit_ISA.srcs/sim_1/new/data_mem_tstbench.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

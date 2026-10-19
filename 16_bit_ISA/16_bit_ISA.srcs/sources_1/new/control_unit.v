@@ -62,29 +62,22 @@ module control_unit(
             ALUOP = 2'b00;
             MemRead = 1;
             MemToReg = 1; 
-            MemWrite = 0;   
         end
         4'b0010 : begin // sw
-            RegWrite = 0;
             ALUSrc = 1; // ALU takes immediate
             ALUOP = 2'b00;
-            MemRead = 0;
-            MemToReg = 0; 
             MemWrite = 1;
         end                                      
         4'b0011 : begin // addi
               RegWrite = 1;
               ALUSrc = 1;
               ALUOP = 2'b00;
-              MemToReg = 0;
         end
         4'b0100 : begin // beq
-              ALUSrc = 0;
               ALUOP = 2'b01;
               Branch = 1;
         end
         4'b0101 : begin // bne
-              ALUSrc = 0;
               ALUOP = 2'b01;
               Zero = 1;
               Branch = 1;                              

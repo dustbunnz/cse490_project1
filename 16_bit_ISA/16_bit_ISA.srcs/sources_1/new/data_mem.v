@@ -32,10 +32,10 @@ module data_mem(
    reg [15:0] mem [0:255]; // Memory array
 
 
-always @(*) begin 
-    if (mem_write == 1) begin
+always @(*) begin  
+    if (mem_write == 1 && mem_read == 0) begin
         mem[addr] = write_data; // sw
-    end else if (mem_read == 1) begin 
+    end else if (mem_read == 1 && mem_write == 0) begin 
         read_data = mem[addr]; // lw
     end
 end                 

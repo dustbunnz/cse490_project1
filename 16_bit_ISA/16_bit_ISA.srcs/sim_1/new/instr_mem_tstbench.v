@@ -35,7 +35,6 @@ module instr_mem_tstbench();
         addr = 16'h0000;
         #10;
 
-        // walk through the first 16 instructions, 2 bytes apart
         for (i = 0; i < 16; i = i + 1) begin
             addr = i * 2;
             #10;
