@@ -1,7 +1,9 @@
 Time resolution is 1 ps
-t=60000 addr=0000 read_data=00a2
-t=70000 addr=0002 read_data=4321
-t=80000 addr=0004 read_data=5ea1
-t=90000 addr=0002 read_data=4321
-$finish called at time : 100 ns : File "/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sim_1/new/data_mem_tstbench.v" Line 106
-INFO: xsimkernel Simulation Memory Usage: 511652 KB (Peak: 569184 KB), Simulation CPU Usage: 680 ms
+t=10000 rst=1 next_pc=0004 pc_out=0000 (expect 0000)
+t=20000 rst=0 next_pc=0002 pc_out=0002 (expect 0002)
+t=30000 rst=0 next_pc=0004 pc_out=0004 (expect 0004)
+t=40000 rst=0 next_pc=0100 pc_out=0100 (expect 0100)
+t=50000 rst=1 next_pc=0200 pc_out=0000 (expect 0000)
+t=60000 rst=0 next_pc=0006 pc_out=0006 (expect 0006)
+$finish called at time : 60 ns : File "/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sim_1/new/program_counter_tstbench.v" Line 68
+INFO: xsimkernel Simulation Memory Usage: 511648 KB (Peak: 569180 KB), Simulation CPU Usage: 690 ms

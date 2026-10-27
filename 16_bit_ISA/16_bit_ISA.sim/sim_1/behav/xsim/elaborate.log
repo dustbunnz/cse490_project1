@@ -1,7 +1,7 @@
 Vivado Simulator v2026.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: /opt/Xilinx/2026.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot data_mem_tstbench_behav xil_defaultlib.data_mem_tstbench xil_defaultlib.glbl -log elaborate.log 
+Running: /opt/Xilinx/2026.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot program_counter_tstbench_behav xil_defaultlib.program_counter_tstbench xil_defaultlib.glbl -log elaborate.log 
 INFO: [XSIM 43-3493] Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -9,7 +9,7 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.data_mem
-Compiling module xil_defaultlib.data_mem_tstbench
+Compiling module xil_defaultlib.program_counter
+Compiling module xil_defaultlib.program_counter_tstbench
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot data_mem_tstbench_behav
+Built simulation snapshot program_counter_tstbench_behav

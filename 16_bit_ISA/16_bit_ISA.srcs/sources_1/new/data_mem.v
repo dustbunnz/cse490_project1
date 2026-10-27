@@ -21,23 +21,23 @@
 
 
 module data_mem(
+    input clk,
     input [15:0] addr,
     input [15:0] write_data,
     input mem_write,
     input mem_read,
-    output reg [15:0] read_data
+    output  [15:0] read_data
     );
 
 
    reg [15:0] mem [0:255]; // Memory array
-
-
-always @(*) begin  
-    if (mem_write == 1 && mem_read == 0) begin
-        mem[addr] = write_data; // sw
-    end else if (mem_read == 1 && mem_write == 0) begin 
-        read_data = mem[addr]; // lw
-    end
-end                 
+   
+always @(posedge clk) begin
+    if (mem_write == 1) begin 
+        mem[addr[7:0]] <= write_data; // sw
+    end 
+end    
+    
+assign read_data = mem_read ? mem[addr[7:0]] : 16'b0; // lw                   
 
 endmodule
