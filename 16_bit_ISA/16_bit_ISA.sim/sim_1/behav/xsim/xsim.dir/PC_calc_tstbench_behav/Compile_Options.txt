@@ -1,1 +1,0 @@
---incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "PC_calc_tstbench_behav" "xil_defaultlib.PC_calc_tstbench" "xil_defaultlib.glbl" -log "elaborate.log" 
