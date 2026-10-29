@@ -33,10 +33,11 @@ module top(
     wire [1:0] ALUOP;
     wire [15:0] new_y, result;
     wire zero_flag;
+    wire [15:0] read_data;
     
     program_counter PC (
         .clk(clk), .rst(rst),
-        .next_pc(next_pc), .pc_out(pc)
+        .next_pc(next_pc), .pc_out(pc_out)
     );
 
     instr_mem IM (
@@ -46,12 +47,12 @@ module top(
     
     register_file RF (
         .clk(clk), .RegWrite(RegWrite), 
-        .read_reg1(instr[11:8]), .read_reg2(instr[7:4]),
+        .read_reg1(instr[7:4]), .read_reg2(instr[11:8]),
         .write_reg(instr[11:8]), .write_data(write_data),
         .read_data1(read_data1), .read_data2(read_data2) 
     );
     
-    sign_ext SE(
+    sign_ex SE(
         .immediate_in(instr[3:0]), .immediate_out(immediate_out)
     );
     
@@ -75,13 +76,13 @@ module top(
     
     MUX2 M2 (
         .alu_result(result), .read_data(read_data),
-        .write_data(write_data)
+        .write_data(write_data), .MemToReg(MemToReg)
     );
 
 
     PC_calc NEXTPC (
         .pc(pc_out), .imm(immediate_out), .Jmp_addr(instr[11:0]),
-        .Jump(Jump), .Branch(Branch), .Zero(Zero),
+        .Jump(Jump), .Branch(Branch), .Zero(zero_flag),
         .next_pc(next_pc)
     );
 

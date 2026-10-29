@@ -1,7 +1,56 @@
 Time resolution is 1 ps
-time=0 RegWrite=0 write_data=0000 read_data1=xxxx
-time=20000 RegWrite=0 write_data=aaaa read_data1=xxxx
-time=40000 RegWrite=1 write_data=aaaa read_data1=xxxx
-time=41000 RegWrite=1 write_data=aaaa read_data1=aaaa
-$finish called at time : 60 ns : File "/home/allie/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sim_1/new/register_file_testbench.v" Line 70
-INFO: xsimkernel Simulation Memory Usage: 278732 KB (Peak: 336004 KB), Simulation CPU Usage: 2090 ms
+t=0 pc=xxxx instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=5000 pc=0000 instr=3135 rd1=0000 rd2=0000 alu=0005 wd=0005
+t=15000 pc=0000 instr=3135 rd1=0000 rd2=0005 alu=0005 wd=0005
+t=25000 pc=0002 instr=3233 rd1=0000 rd2=0000 alu=0003 wd=0003
+t=35000 pc=0004 instr=0120 rd1=0003 rd2=0005 alu=0008 wd=0008
+t=45000 pc=0006 instr=3301 rd1=0000 rd2=0000 alu=0001 wd=0001
+t=55000 pc=0008 instr=0121 rd1=0003 rd2=0008 alu=fffb wd=fffb
+t=65000 pc=000a instr=0232 rd1=0001 rd2=0003 alu=0006 wd=0006
+t=75000 pc=000c instr=370f rd1=0000 rd2=0000 alu=ffff wd=ffff
+t=85000 pc=000e instr=0711 rd1=fffb rd2=ffff alu=fffc wd=fffc
+t=95000 pc=0010 instr=0123 rd1=0006 rd2=fffb alu=0002 wd=0002
+t=105000 pc=0012 instr=2100 rd1=0000 rd2=0002 alu=0000 wd=0000
+t=115000 pc=0014 instr=1400 rd1=0000 rd2=0000 alu=0000 wd=0002
+t=125000 pc=0016 instr=272b rd1=0006 rd2=fffc alu=0001 wd=0001
+t=135000 pc=0018 instr=182b rd1=0006 rd2=0000 alu=0001 wd=fffc
+t=145000 pc=001a instr=4411 rd1=0002 rd2=0002 alu=0000 wd=0000
+t=155000 pc=001e instr=3605 rd1=0000 rd2=0000 alu=0005 wd=0005
+t=165000 pc=0020 instr=3331 rd1=0001 rd2=0001 alu=0002 wd=0002
+t=175000 pc=0022 instr=536e rd1=0005 rd2=0002 alu=0003 wd=0003
+t=185000 pc=0020 instr=3331 rd1=0002 rd2=0002 alu=0003 wd=0003
+t=195000 pc=0022 instr=536e rd1=0005 rd2=0003 alu=0002 wd=0002
+t=205000 pc=0020 instr=3331 rd1=0003 rd2=0003 alu=0004 wd=0004
+t=215000 pc=0022 instr=536e rd1=0005 rd2=0004 alu=0001 wd=0001
+t=225000 pc=0020 instr=3331 rd1=0004 rd2=0004 alu=0005 wd=0005
+t=235000 pc=0022 instr=536e rd1=0005 rd2=0005 alu=0000 wd=0000
+t=245000 pc=0024 instr=380f rd1=0000 rd2=fffc alu=ffff wd=ffff
+t=255000 pc=0026 instr=6001 rd1=0000 rd2=0000 alu=0000 wd=0000
+t=265000 pc=002a instr=3d09 rd1=0000 rd2=0000 alu=fff9 wd=fff9
+t=275000 pc=002c instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=285000 pc=002e instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=295000 pc=0030 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=305000 pc=0032 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=315000 pc=0034 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=325000 pc=0036 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=335000 pc=0038 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=345000 pc=003a instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=355000 pc=003c instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=365000 pc=003e instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=375000 pc=0040 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=385000 pc=0042 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=395000 pc=0044 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=405000 pc=0046 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=415000 pc=0048 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=425000 pc=004a instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=435000 pc=004c instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=445000 pc=004e instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=455000 pc=0050 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=465000 pc=0052 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=475000 pc=0054 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=485000 pc=0056 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=495000 pc=0058 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=505000 pc=005a instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+t=515000 pc=005c instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
+$finish called at time : 520 ns : File "/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sim_1/new/top_tstbench.v" Line 45
+INFO: xsimkernel Simulation Memory Usage: 577220 KB (Peak: 642756 KB), Simulation CPU Usage: 700 ms
