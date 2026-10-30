@@ -53,7 +53,7 @@ module PC_calc_tstbench(
         pc = 16'h0010;
         #10;
 
-        // Zero set but Branch not set 
+        // Zero set
         Zero = 1;
         #10;
 
@@ -67,7 +67,7 @@ module PC_calc_tstbench(
         imm = 16'hFFFC;
         #10;
 
-        // Branch not taken (Zero = 0)
+        // Branch not taken 
         Zero = 0;
         #10;
 

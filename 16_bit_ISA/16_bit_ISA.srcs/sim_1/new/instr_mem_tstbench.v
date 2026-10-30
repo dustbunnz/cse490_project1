@@ -34,8 +34,8 @@ module instr_mem_tstbench();
     initial begin
         addr = 16'h0000;
         #10;
-
-        for (i = 0; i < 16; i = i + 1) begin
+// fetches all the instructions in the txt file
+        for (i = 0; i < 22; i = i + 1) begin
             addr = i * 2;
             #10;
             $display("t=%0t addr=%h instr=%h", $time, addr, instr);

@@ -39,7 +39,7 @@ module program_counter_tstbench();
     always #5 clk = ~clk;
 
     initial begin
-        // Start with reset asserted
+        // Start with reset 
         rst = 1; next_pc = 16'h0004;
 
         @(negedge clk);

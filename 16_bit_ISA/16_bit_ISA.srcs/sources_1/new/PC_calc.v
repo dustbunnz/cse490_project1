@@ -34,7 +34,7 @@ module PC_calc(
     wire [15:0] pc_jmp = (Jmp_addr << 1) + pc_incre;
     wire [15:0] pc_bnch = (imm << 1) + pc_incre;
     
-    always @(*) begin // Later might change to use multiplexers
+    always @(*) begin 
         if (Branch == 1 && Zero == 1) begin
             next_pc = pc_bnch;
         end else if (Jump == 1) begin 
