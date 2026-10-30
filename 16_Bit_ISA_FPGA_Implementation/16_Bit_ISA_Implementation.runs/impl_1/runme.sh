@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.runs/impl_1'
+HD_PWD='/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

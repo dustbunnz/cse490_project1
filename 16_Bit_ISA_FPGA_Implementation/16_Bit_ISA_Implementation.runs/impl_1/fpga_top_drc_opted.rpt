@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2026.1 (lin64) Build 6511674 Tue Jun 16 11:01:26 MDT 2026
-| Date         : Thu Oct 29 20:35:00 2026
+| Date         : Fri Oct 30 11:34:38 2026
 | Host         : COMPUTERBOOK running 64-bit Fedora Linux 44 (KDE Plasma Desktop Edition)
 | Command      : report_drc -file fpga_top_drc_opted.rpt -pb fpga_top_drc_opted.pb -rpx fpga_top_drc_opted.rpx
 | Design       : fpga_top

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.runs/synth_1/fpga_top.tcl"
+  variable script "/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.runs/synth_1/fpga_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -57,6 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
@@ -64,28 +65,28 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.cache/wt [current_project]
-set_property parent.project_path /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.xpr [current_project]
+set_property webtalk.parent_dir /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.cache/wt [current_project]
+set_property parent.project_path /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.cache/ip [current_project]
+set_property ip_output_repo /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_mem /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/new/instr_mem.mem
+read_mem /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/new/instr_mem.mem
 read_verilog -library xil_defaultlib {
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/MUX1.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/MUX2.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/PC_calc.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/alu.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/control_unit.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/data_mem.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/instr_mem.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/program_counter.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/Downloads/register_file.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/sign_ex.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/top.v
-  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/new/fpga_top.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/MUX1.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/MUX2.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/PC_calc.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/alu.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/control_unit.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/data_mem.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/instr_mem.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/program_counter.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/Downloads/register_file.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/sign_ex.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/imports/imports/new/top.v
+  /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/sources_1/new/fpga_top.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -96,8 +97,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc
-set_property used_in_implementation false [get_files /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc]
+read_xdc /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc
+set_property used_in_implementation false [get_files /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

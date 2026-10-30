@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.runs/impl_1/fpga_top.tcl"
+  variable script "/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.runs/impl_1/fpga_top.tcl"
   variable category "vivado_impl"
 }
 
@@ -105,6 +105,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
   set_param general.usePosixSpawnForFork 1
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
@@ -113,15 +114,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.cache/wt [current_project]
-  set_property parent.project_path /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.xpr [current_project]
-  set_property ip_output_repo /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.cache/wt [current_project]
+  set_property parent.project_path /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.xpr [current_project]
+  set_property ip_output_repo /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.runs/synth_1/fpga_top.dcp
+  add_files -quiet /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.runs/synth_1/fpga_top.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc
+  read_xdc /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

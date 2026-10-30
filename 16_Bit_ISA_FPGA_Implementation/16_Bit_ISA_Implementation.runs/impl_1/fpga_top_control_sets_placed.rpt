@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2026.1 (lin64) Build 6511674 Tue Jun 16 11:01:26 MDT 2026
-| Date         : Thu Oct 29 20:35:08 2026
+| Date         : Fri Oct 30 11:34:50 2026
 | Host         : COMPUTERBOOK running 64-bit Fedora Linux 44 (KDE Plasma Desktop Edition)
 | Command      : report_control_sets -verbose -file fpga_top_control_sets_placed.rpt
 | Design       : fpga_top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    20 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    11 |
+| Unused register locations in slices containing registers |     8 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -40,8 +40,8 @@ Table of Contents
 |       Fanout       | Count |
 +--------------------+-------+
 | Total control sets |    20 |
-| >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     2 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | No                     |               3 |            2 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              20 |            5 |
-| Yes          | No                    | No                     |             256 |          138 |
+| No           | Yes                   | No                     |              32 |            9 |
+| Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               5 |            2 |
+| Yes          | Yes                   | No                     |             261 |          149 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,26 +73,26 @@ Table of Contents
 +----------------+------------------------------+--------------------+------------------+----------------+--------------+
 |  Clock Signal  |         Enable Signal        |  Set/Reset Signal  | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+------------------------------+--------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG |                              |                    |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG |                              |                    |                2 |              3 |         1.50 |
 |  clk_IBUF_BUFG | top_file/PC/pulse            | rst_IBUF           |                2 |              5 |         2.50 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_1[0]  |                    |               12 |             16 |         1.33 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_12[0] |                    |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_13[0] |                    |               10 |             16 |         1.60 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_2[0]  |                    |               10 |             16 |         1.60 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_4[0]  |                    |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_3[0]  |                    |                9 |             16 |         1.78 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_9[0]  |                    |               12 |             16 |         1.33 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_6[0]  |                    |                9 |             16 |         1.78 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_7[0]  |                    |                6 |             16 |         2.67 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_8[0]  |                    |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_5[0]  |                    |                8 |             16 |         2.00 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_11[0] |                    |                9 |             16 |         1.78 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg[0]    |                    |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_0[0]  |                    |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | top_file/PC/stable_reg_10[0] |                    |                9 |             16 |         1.78 |
-|  clk_IBUF_BUFG | top_file/PC/E[0]             |                    |                9 |             16 |         1.78 |
-|  clk_IBUF_BUFG |                              | counter[0]_i_1_n_0 |                5 |             20 |         4.00 |
-|  clk_IBUF_BUFG | top_file/PC/p_1_in           |                    |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | top_file/PC/stable_reg_0     | top_file/PC/rst_4  |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_39 | top_file/PC/rst_9  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_36 | top_file/PC/rst    |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_35 | top_file/PC/rst_12 |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_44 | top_file/PC/rst_3  |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_40 | top_file/PC/rst_7  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_38 | top_file/PC/rst_10 |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_41 | top_file/PC/rst_8  |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_42 | top_file/PC/rst_14 |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG | top_file/PC/stable_reg_1     | top_file/PC/rst_5  |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG | top_file/PC/stable_reg       | top_file/PC/rst_0  |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG | top_file/PC/stable_reg_3     | top_file/PC/rst_2  |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG | top_file/PC/stable_reg_4     | top_file/PC/rst_11 |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | top_file/PC/stable_reg_2     | top_file/PC/rst_1  |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_43 | top_file/PC/rst_13 |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | top_file/PC/pc_out_reg[1]_37 | top_file/PC/rst_6  |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG |                              | stable             |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | top_file/PC/p_1_in__0        |                    |               16 |             64 |         4.00 |
 +----------------+------------------------------+--------------------+------------------+----------------+--------------+
 
 

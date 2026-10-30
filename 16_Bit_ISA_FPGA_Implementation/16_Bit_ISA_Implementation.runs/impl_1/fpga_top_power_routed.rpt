@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2026.1 (lin64) Build 6511674 Tue Jun 16 11:01:26 MDT 2026
-| Date             : Thu Oct 29 20:35:26 2026
+| Date             : Fri Oct 30 11:35:10 2026
 | Host             : COMPUTERBOOK running 64-bit Fedora Linux 44 (KDE Plasma Desktop Edition)
 | Command          : report_power -file fpga_top_power_routed.rpt -pb fpga_top_power_summary_routed.pb -rpx fpga_top_power_routed.rpx
 | Design           : fpga_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.103        |
+| Total On-Chip Power (W)  | 0.105        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.032        |
+| Dynamic (W)              | 0.033        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.002 |        3 |       --- |             --- |
-| Slice Logic              |     0.003 |      943 |       --- |             --- |
-|   LUT as Logic           |     0.003 |      387 |     20800 |            1.86 |
+| Slice Logic              |     0.004 |      937 |       --- |             --- |
+|   LUT as Logic           |     0.003 |      470 |     20800 |            2.26 |
 |   LUT as Distributed RAM |    <0.001 |       64 |      9600 |            0.67 |
-|   F7/F8 Muxes            |    <0.001 |      143 |     32600 |            0.44 |
-|   CARRY4                 |    <0.001 |       15 |      8150 |            0.18 |
-|   Register               |    <0.001 |      285 |     41600 |            0.69 |
-|   Others                 |     0.000 |        6 |       --- |             --- |
-| Signals                  |     0.007 |      615 |       --- |             --- |
-| I/O                      |     0.020 |       23 |       106 |           21.70 |
+|   CARRY4                 |    <0.001 |       18 |      8150 |            0.22 |
+|   F7/F8 Muxes            |    <0.001 |       49 |     32600 |            0.15 |
+|   Register               |    <0.001 |      296 |     41600 |            0.71 |
+|   Others                 |     0.000 |        5 |       --- |             --- |
+| Signals                  |     0.008 |      801 |       --- |             --- |
+| I/O                      |     0.019 |       23 |       106 |           21.70 |
 | Static Power             |     0.072 |          |           |                 |
-| Total                    |     0.103 |          |           |                 |
+| Total                    |     0.105 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.022 |       0.012 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.024 |       0.014 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -142,9 +142,9 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| fpga_top   |     0.032 |
-|   top_file |     0.012 |
-|     PC     |     0.005 |
+| fpga_top   |     0.033 |
+|   top_file |     0.013 |
+|     PC     |     0.007 |
 |     RF     |     0.005 |
 +------------+-----------+
 

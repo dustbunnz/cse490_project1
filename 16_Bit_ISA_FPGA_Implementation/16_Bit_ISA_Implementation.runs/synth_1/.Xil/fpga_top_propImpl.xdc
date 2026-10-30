@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_Implementation/16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc rfile:../../../16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_Bit_ISA_FPGA_Implementation/16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc rfile:../../../16_Bit_ISA_Implementation.srcs/constrs_1/new/fpga_top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports {clk}]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]

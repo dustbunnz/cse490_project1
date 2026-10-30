@@ -28,21 +28,18 @@ module fpga_top #(parameter COUNT = 1_000_000 )(
     output [15:0] reg_val
     );
     
-    reg sync0, sync1;
+    reg sync;
     reg [31:0] counter = 0;
     reg stable;
     
     
     always @(posedge clk) begin 
-        sync0 <= step;
-        sync1 <= sync0; 
+         sync <= step;
     end 
     
     always @(posedge clk) begin 
-        if (sync1 == stable)
-            counter <=0;
-        else if (counter == COUNT) begin
-            stable <= sync1;
+         if (counter == COUNT) begin
+            stable <= sync;
             counter <= 0;
         end else
             counter <= counter + 1;                        

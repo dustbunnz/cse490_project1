@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1793320455">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1793374430">
   <File Type="VDS-TIMINGSUMMARY" Name="fpga_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="fpga_top.dcp"/>
   <File Type="RDS-UTIL-PB" Name="fpga_top_utilization_synth.pb"/>
@@ -148,9 +148,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2026">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2026"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
