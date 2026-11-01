@@ -23,6 +23,7 @@
 module register_file(
     input clk,
     input clk_en,
+    input rst,
     input RegWrite,
     input[3:0] read_reg1,
     input[3:0] read_reg2,
@@ -50,7 +51,10 @@ module register_file(
 
     always @(posedge clk)
     begin
-        if (clk_en) begin
+        if (rst) begin
+            for (i = 0; i < 16; i = i + 1)
+                regs[i] <= 16'b0;
+        end if (clk_en) begin
         case(RegWrite)
             1'b1: regs[write_reg] <= write_data;
             default:;

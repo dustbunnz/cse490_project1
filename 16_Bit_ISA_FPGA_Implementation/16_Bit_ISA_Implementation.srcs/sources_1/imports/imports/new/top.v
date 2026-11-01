@@ -48,7 +48,7 @@ module top(
 
     
     register_file RF (
-        .clk(clk), .RegWrite(RegWrite), .clk_en(clk_en), 
+        .clk(clk), .RegWrite(RegWrite), .clk_en(clk_en), .rst(rst),
         .read_reg1(instr[7:4]), .read_reg2(instr[11:8]),
         .write_reg(instr[11:8]), .write_data(write_data),
         .read_data1(read_data1), .read_data2(read_data2), .mem_array(reg_mem) 

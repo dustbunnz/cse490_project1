@@ -28,21 +28,31 @@ module fpga_top #(parameter COUNT = 1_000_000 )(
     output [15:0] reg_val
     );
     
-    reg sync0, sync1;
+    /* FPGA Hardware:
+      INPUTS:
+            system clock -> clk
+            SWITCH(R2) ->  step
+            BTN(T18) -> rst
+            switches(V17-W17) -> reg_num
+
+      OUTPUTS:
+            LEDs -> reg_val (in binary)
+*/
+
+    
+    reg sync;
     reg [31:0] counter = 0;
     reg stable;
     
-    
+    //syncronize switch input
     always @(posedge clk) begin 
-        sync0 <= step;
-        sync1 <= sync0; 
+         sync <= step;
     end 
     
+    // debouncing logic
     always @(posedge clk) begin 
-        if (sync1 == stable)
-            counter <=0;
-        else if (counter == COUNT) begin
-            stable <= sync1;
+         if (counter == COUNT) begin
+            stable <= sync;
             counter <= 0;
         end else
             counter <= counter + 1;                        
@@ -50,6 +60,7 @@ module fpga_top #(parameter COUNT = 1_000_000 )(
     
     reg prev_state = 0;
     
+    // creates pulse on every switch toggle
     always @(posedge clk) prev_state <= stable;
     wire pulse = stable ^ prev_state;
     
@@ -60,6 +71,7 @@ module fpga_top #(parameter COUNT = 1_000_000 )(
         .reg_mem(reg_mem)
     );
     
+    // fetches register value
     assign reg_val = reg_mem[reg_num*16 +: 16];
     
 endmodule

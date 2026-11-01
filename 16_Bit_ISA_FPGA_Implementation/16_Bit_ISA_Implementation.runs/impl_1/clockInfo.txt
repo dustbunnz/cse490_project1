@@ -1,8 +1,8 @@
 -------------------------------------
 | Tool Version : Vivado v.2026.1
-| Date         : Thu Oct 29 20:35:01 2026
+| Date         : Sat Oct 31 19:34:46 2026
 | Host         : COMPUTERBOOK
-| Design       : design_1
+| Design       : checkpoint_fpga_top
 | Device       : xc7a35t-cpg236-1--
 -------------------------------------
 
