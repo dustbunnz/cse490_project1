@@ -1,0 +1,282 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 09-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Nov  1 21:26:04 2026
+# Process ID         : 18461
+# Current directory  : /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.runs/synth_1
+# Command line       : vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.runs/synth_1/top.vds
+# Journal file       : /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.runs/synth_1/vivado.jou
+# Running On         : COMPUTERBOOK
+# Platform           : Fedora
+# Operating System   : Fedora Linux 44 (KDE Plasma Desktop Edition)
+# Processor Detail   : AMD Ryzen 7 8840HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3049.507 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14394 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 22984 MB
+# Available Virtual  : 15840 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sun Nov  1 21:26:04 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18492
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2554.195 ; gain = 488.172 ; free physical = 180 ; free virtual = 13887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/program_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'instr_mem.txt'; please make sure the file is added to project and has read permission, ignoring [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/imports/Downloads/register_file.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/imports/Downloads/register_file.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sign_ex' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/sign_ex.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sign_ex' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/sign_ex.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v:52]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/control_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-226] default block is never used [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/alu.v:32]
+INFO: [Synth 8-226] default block is never used [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/alu.v:39]
+INFO: [Synth 8-226] default block is never used [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/alu.v:41]
+INFO: [Synth 8-226] default block is never used [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/alu.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX1' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/MUX1.v:23]
+INFO: [Synth 8-226] default block is never used [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/MUX1.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'MUX1' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/MUX1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/MUX2.v:23]
+INFO: [Synth 8-226] default block is never used [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/MUX2.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/MUX2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_calc' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/PC_calc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC_calc' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/PC_calc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3848] Net mem in module/entity instr_mem does not have driver. [/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sources_1/new/instr_mem.v:29]
+WARNING: [Synth 8-7129] Port addr[15] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[15] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[14] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[13] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[12] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[11] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[10] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[9] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[8] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[7] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[6] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[5] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[4] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[3] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[2] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[1] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[0] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[7] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[6] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[5] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[4] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[3] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[2] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module instr_mem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2640.164 ; gain = 574.141 ; free physical = 202 ; free virtual = 13823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2655.008 ; gain = 588.984 ; free physical = 199 ; free virtual = 13821
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2655.008 ; gain = 588.984 ; free physical = 199 ; free virtual = 13821
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2663.914 ; gain = 597.891 ; free physical = 185 ; free virtual = 13810
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   16 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 4     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	   8 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port rst in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2767.789 ; gain = 701.766 ; free physical = 166 ; free virtual = 13745
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2791.602 ; gain = 725.578 ; free physical = 157 ; free virtual = 13737
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2791.602 ; gain = 725.578 ; free physical = 149 ; free virtual = 13729
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2986.414 ; gain = 920.391 ; free physical = 172 ; free virtual = 13589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2986.414 ; gain = 920.391 ; free physical = 172 ; free virtual = 13589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2986.414 ; gain = 920.391 ; free physical = 172 ; free virtual = 13589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2986.414 ; gain = 920.391 ; free physical = 172 ; free virtual = 13589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2986.414 ; gain = 920.391 ; free physical = 172 ; free virtual = 13589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2986.414 ; gain = 920.391 ; free physical = 172 ; free virtual = 13589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2986.414 ; gain = 920.391 ; free physical = 172 ; free virtual = 13589
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 42 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2986.414 ; gain = 920.391 ; free physical = 172 ; free virtual = 13589
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2989.383 ; gain = 920.391 ; free physical = 172 ; free virtual = 13589
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2989.383 ; gain = 0.000 ; free physical = 155 ; free virtual = 13574
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3101.852 ; gain = 0.000 ; free physical = 200 ; free virtual = 13633
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 26c87856
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+40 Infos, 42 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 3104.820 ; gain = 1038.797 ; free physical = 199 ; free virtual = 13634
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1995.767; main = 1995.767; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3104.824; main = 3104.824; forked = 0.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 21:26:18 2026...
