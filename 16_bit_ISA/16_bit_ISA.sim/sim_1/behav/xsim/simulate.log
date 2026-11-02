@@ -53,4 +53,3 @@ t=495000 pc=0058 instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
 t=505000 pc=005a instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
 t=515000 pc=005c instr=xxxx rd1=xxxx rd2=xxxx alu=xxxx wd=xxxx
 $finish called at time : 520 ns : File "/home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.srcs/sim_1/new/top_tstbench.v" Line 45
-INFO: xsimkernel Simulation Memory Usage: 577220 KB (Peak: 642756 KB), Simulation CPU Usage: 700 ms

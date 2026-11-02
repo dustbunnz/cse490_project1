@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Nov  1 21:26:04 2026
+# Process ID         : 18461
+# Current directory  : /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.runs/synth_1
+# Command line       : vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.runs/synth_1/top.vds
+# Journal file       : /home/jacobbem/School_Stuff/Fall_2026/CSE_490/Project_1/cse490_project1/16_bit_ISA/16_bit_ISA.runs/synth_1/vivado.jou
+# Running On         : COMPUTERBOOK
+# Platform           : Fedora
+# Operating System   : Fedora Linux 44 (KDE Plasma Desktop Edition)
+# Processor Detail   : AMD Ryzen 7 8840HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3049.507 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14394 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 22984 MB
+# Available Virtual  : 15840 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
